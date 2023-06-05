@@ -6,6 +6,7 @@ import vector from '../../assets/Vector.svg';
 import account from '../../assets/account_balance.svg';
 import search from '../../assets/search.svg';
 
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className='bottomfooter'>
@@ -13,10 +14,12 @@ const Footer = () => {
         <img src={home} alt='home'/>
         {/* <span className="footer-text active">Home</span> */}
       </a>
-      <a href="#" className="footer-link">
+      <Link to="/search-post">
+     
       <img src={search} alt='home'/>
         {/* <span className="footer-text">Search</span> */}
-      </a>
+        </Link>
+
       <a href="#" className="footer-link">
       <img src={account} alt='home'/>
         {/* <span className="footer-text">Search</span> */}
