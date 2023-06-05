@@ -7,11 +7,7 @@ import LawyerDetail from '../LawyerDetail';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 
 function NewsFeedHeader(props) {
-  const [showLawyerDetails, setShowLawyerDetails] = useState(false);
 
-  const handleLawyerClick = () => {
-    setShowLawyerDetails(true);
-  };
 
   return (
     <div className="news-feed-header">
@@ -29,7 +25,7 @@ function NewsFeedHeader(props) {
               src={lawyer}
               alt="End User Icon"
               className="icon"
-              onClick={handleLawyerClick}
+              
             />
           </Link>
         </div>

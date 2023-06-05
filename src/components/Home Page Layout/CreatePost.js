@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Plus from '../../assets/Plus.svg';
 
-function CreatePost() {
-  const handleAddPost = () => {
-    // Logic for adding a post
-  };
+import CreatePostContent from './CreatePostContent';
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+
+function CreatePost(props) {
+
 
   return (
     <div className="add-post-button">
+       <Link to="/create-post">
+        <button >
+          <img src={Plus} alt="Add Post" />
+        </button>
+     
+        </Link>
 
-<button  onClick={handleAddPost}>
-      <img src={Plus}></img>
-    </button>
     </div>
-    
   );
 }
 

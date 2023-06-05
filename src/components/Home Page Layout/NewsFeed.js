@@ -48,7 +48,8 @@ const NewsFeed = () => {
       <ButtonRow/>
       {newsData.map(newsItem => (
         
-        <Card key={newsItem.id} style={{ marginBottom: '16px' }}>
+        <Card key={newsItem.id}
+         style={{ marginBottom: '16px' }}>
           <div className='user-sec'>
             <div className='userimg'>{<img src={newsItem.userImage} alt={newsItem.username} />}</div>
             <div className='username'>  <p>{newsItem.tittle}</p></div>
