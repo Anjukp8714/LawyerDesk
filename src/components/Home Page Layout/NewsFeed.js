@@ -11,6 +11,7 @@ import user from '../../assets/chandru.svg';
 import NewsFeedHeader from './NewsFeedHeader';
 import ButtonRow from './ButtonRow';
 import CreatePost from './CreatePost';
+import Navbar from './Navbar';
 
 const { Meta } = Card;
 
@@ -43,7 +44,10 @@ const NewsFeed = () => {
   ];
 
   return (
+    <div className='outer-sec'>
+      <Navbar/>
     <div className="news-sec w-[90%] md:w-[80%] mx-auto my-0 feed-sec">
+      
       <NewsFeedHeader/>
       <ButtonRow/>
       {newsData.map(newsItem => (
@@ -90,6 +94,7 @@ const NewsFeed = () => {
         </Card>
       ))}
     <CreatePost/>
+    </div>
     </div>
   );
 };

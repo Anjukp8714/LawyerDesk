@@ -1,0 +1,7 @@
+.settings-item {
+    display: flex;
+    border-bottom: 1px solid;
+    padding: 20px;
+    justify-content: space-between;
+    background: #fff;
+}

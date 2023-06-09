@@ -10,10 +10,11 @@ import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className='bottomfooter'>
-      <a href="#" className="footer-link">
+           <Link to="/">
         <img src={home} alt='home'/>
         {/* <span className="footer-text active">Home</span> */}
-      </a>
+        </Link>
+
       <Link to="/search-post">
      
       <img src={search} alt='home'/>
@@ -28,10 +29,10 @@ const Footer = () => {
       <img src={vector} alt='home'/>
         {/* <span className="footer-text">Message</span> */}
       </a>
-      <a href="#" className="footer-link">
+      <Link to="/settings">
       <img src={settings} alt='home'/>
         {/* <span className="footer-text">Settings</span> */}
-      </a>
+        </Link>
     </footer>
   );
 };

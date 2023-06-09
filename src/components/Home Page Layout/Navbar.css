@@ -1,0 +1,21 @@
+.menu-sec .left-menu-sec ul li {
+    padding: 10px 10px;
+}
+.menu-sec  ul li  a{
+    color:#fff;
+}
+
+.menu-sec  .left-menu-sec ul {
+    display: flex;
+}
+.menu-sec {
+    display: flex;
+    justify-content: space-between;
+    background: #ffcc00;
+}
+.menu-sec .right-menu-sec ul {
+    display: flex;
+}
+.menu-sec .right-menu-sec ul li{
+    padding: 10px 10px;
+}
